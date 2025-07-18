@@ -10,6 +10,23 @@ document.addEventListener('DOMContentLoaded', () => {
     const blocoDeNotas = document.getElementById('blocoDeNotas');
     const btnLimparNotas = document.getElementById('btnLimparNotas');
     const btnSalvarNota = document.getElementById('btnSalvarNota');
+    const btnDestacar = document.getElementById('btnDestacar');
+
+    // Alterna a classe no <body> ao clicar no botão
+    btnDestacar.addEventListener('click', () => {
+        document.body.classList.toggle('destacar-pagina');
+    
+        // Atualiza o texto do botão dinamicamente
+        if (document.body.classList.contains('destacar-pagina')) {
+            btnDestacar.textContent = "Remover Tema";
+        } else {
+            btnDestacar.textContent = "Mudar Tema";
+        }
+    
+        console.log("Cor da página alterada com destaque.");
+    });
+    
+
 
     //Adicionamos um evento de clique ao botão para limpar notas
     btnLimparNotas.addEventListener('click', () => {

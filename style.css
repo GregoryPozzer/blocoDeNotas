@@ -48,3 +48,29 @@ p {
     border-color: #007bff;
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
+
+/* Classe que será adicionada dinamicamente */
+/* Classe para destacar toda a página */
+.destacar-pagina {
+    background-color: black !important; /* fundo amarelo suave */
+    transition: background-color 0.3s ease-in-out;
+}
+/* Estilo geral para todos os botões */
+button {
+    background-color: #000;         /* Fundo preto */
+    color: #fff;                    /* Texto branco */
+    border: 2px solid #fff;         /* Borda branca */
+    padding: 10px 20px;
+    border-radius: 10px;            /* Arredondamento */
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;      /* Suavidade na transição */
+    margin: 5px;
+}
+
+/* Efeito ao passar o mouse */
+button:hover {
+    background-color: #fff;         /* Fundo branco */
+    color: #000;                    /* Texto preto */
+    border-color: #000;             /* Borda preta */
+}
